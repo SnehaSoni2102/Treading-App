@@ -1,4 +1,4 @@
-import Frame from "../../Assets/Frame.svg";
+import Frame from "../../../Assets/Frame.svg"
 export const KoinXFreeCard = () => {
   return (
     <div className="flex flex-col justify-between rounded-xl bg-[#0052FE] mx-4 py-12 w-[426px] h-[515px] text-center text-[#ffffff] ">
