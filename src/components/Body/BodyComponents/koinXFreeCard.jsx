@@ -1,7 +1,7 @@
 import Frame from "../../../Assets/Frame.svg"
 export const KoinXFreeCard = () => {
   return (
-    <div className="flex flex-col justify-between rounded-xl bg-[#0052FE] mx-4 py-12 w-[426px] h-[515px] text-center text-[#ffffff] ">
+    <div className="flex flex-col justify-between rounded-xl bg-[#0052FE] py-12 w-[426px] h-[515px] text-center text-[#ffffff] ">
       <h1 className="text-[24px] font-semibold "> Get Started with KoinX<br/> for FREE </h1>
       <p className=" text-[14px] ">
         With our range of features that you can equip for<br/> free, KoinX allows you
