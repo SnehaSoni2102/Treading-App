@@ -10,7 +10,7 @@ function App() {
       {/* <div className="bg-red-100">
          <TradingViewWidget /> 
       </div> */}
-      <div className="flex flex-wrap justify-center m-[56px]">
+      <div className="flex flex-row justify-center m-[56px]">
         <div ><img  src={div} alt="trade" style={{height:711, width:881}} /></div>
         <div>
         <KoinXFreeCard />
