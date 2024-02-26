@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React,{useEffect, useState} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import GetTrendingCoinService from "../../service/TrendingCoinsService";
+import GetTrendingCoinService from "../../service/TrendingCoinsService"
 
-export const LikeChart = () => {
-  const [data, setData] = useState(null);
+export const TrendingCoinCarousel = () =>{
+    const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   const sliderSettings = {
@@ -34,13 +34,12 @@ export const LikeChart = () => {
   if (loading) {
     return <p>Loading...</p>;
   }
-  console.log(data, "dararfac");
 
   return (
     <React.Fragment>
-      <div className="bg-[#ffffff] pt-8">
+      <div className="bg-[#ffffff] pb-12">
         <div className=" w-11/12 m-auto">
-          <h1 className="py-4 text-[24px] font-medium">You may also like</h1>
+          <h1 className="py-4 text-[24px] font-medium">Trending Coins</h1>
           <Slider {...sliderSettings}>
             {data?.coins?.map((item, index) => (
               <div
@@ -71,4 +70,4 @@ export const LikeChart = () => {
       </div>
     </React.Fragment>
   );
-};
+}
