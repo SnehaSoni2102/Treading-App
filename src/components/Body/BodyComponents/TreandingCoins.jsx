@@ -1,7 +1,7 @@
 import { coinsData } from "../../../utiles/coinsData";
 import Polygon from "../../../Assets/Polygon.svg";
 export const TreandingCoins = () => {
-  console.log(coinsData);
+  
   return (
     <div className="rounded-xl bg-[#ffffff] p-6 ">
         <h1 className="text-[24px] font-semibold">Trending Coins (24h)</h1>
