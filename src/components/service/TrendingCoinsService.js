@@ -8,9 +8,8 @@ class GetTrendingCoinService {
       const url = `https://api.coingecko.com/api/v3/search/trending`;
 
       const response = await axios.get(url);
-
       if (response.status === 200) {
-        return response.data[cryptoId];
+        return response.data;
       } else {
         throw new Error("Error fetching data");
       }

@@ -6,7 +6,6 @@ import GetSimplePriceService from "../../service/GetSimplePrice"
 
 const GetSimplePrice = () => {
   const [cryptoData, setCryptoData] = useState(null);
-  const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -15,15 +14,14 @@ const GetSimplePrice = () => {
         const data = await GetSimplePriceService.getSimplePrice();
         setCryptoData(data);
       } catch (error) {
-        console.log(error,"sd")
-        setError(error.message);
+        console.log(error.message);
       } finally {
         setLoading(false);
       }
     };
 
     fetchData();
-  }, []); // Empty dependency array ensures that useEffect runs once when the component mounts
+  }, []); 
 
   if (loading) {
     return <p>Loading...</p>;
