@@ -28,10 +28,6 @@ function TradingViewWidget() {
         }`;
       if(container.current)
       container.current.appendChild(script);
-      // return ()=>{
-      //   if(container.current)
-      //   container.current.innerHTML="";
-      // }
     },
     []
   );
