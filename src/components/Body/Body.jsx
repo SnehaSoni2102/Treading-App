@@ -9,22 +9,27 @@ import { TrendingCoinCarousel } from "./BodyComponents/TrendingCoinCarousel";
 export const Body = () => {
   return (
     <React.Fragment>
-      <div className="flex flex-row justify-center gap-4 m-[56px]">
-        <div className="bg-red-100 w-[881px] h-[711px]">
+      <div className="flex flex-row justify-center gap-4 md:m-[56px] m-4">
+        <div className="bg-red-100 md:w-[881px] w-full  md:h-[711px] h-[491px]">
          <TradingViewWidget /> 
       </div>
-        {/* <div>
-          <img src={div} alt="trade" style={{ height: 711, width: 881 }} />
-        </div> */}
-        <div className=" flex flex-col gap-4">
+      <div className="hidden lg:block">
+      <div className=" flex flex-col gap-4">
           <KoinXFreeCard />
           <TreandingCoins />
         </div>
       </div>
+      </div>
       <div>
-        <div className="">
+        <div className="md:m-0 m-4">
           <LikeChart />
           <TrendingCoinCarousel />
+        </div>
+        <div className="md:hidden">
+          <div className="mx-4 my-14">
+          <KoinXFreeCard />
+          </div>
+          <TreandingCoins />
         </div>
       </div>
     </React.Fragment>

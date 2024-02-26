@@ -28,7 +28,7 @@ export const TreandingCoins = () => {
   }
   
   return (
-    <div className="rounded-xl bg-[#ffffff] p-6 ">
+    <div className="md:rounded-xl bg-[#ffffff] p-6 ">
         <h1 className="text-[24px] font-semibold">Trending Coins (24h)</h1>
       {data?.coins?.slice(0, 3).map((item, index) => (
         <div key={item?.item?.coinId} className=" grid grid-cols-2  text-[16px] pt-4">
